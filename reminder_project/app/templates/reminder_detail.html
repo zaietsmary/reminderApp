@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ reminder.info }}</h1>
+<p>Дата: {{ reminder.date }}</p>
+
+<a href="{% url 'reminder_edit' reminder.pk %}">Редагувати</a>
+<a href="{% url 'reminder_delete' reminder.pk %}">Видалити</a>
+<a href="{% url 'reminder_list' %}">Назад до списку</a>
+{% endblock %}

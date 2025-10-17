@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Список нагадувань</h1>
+
+<a href="{% url 'reminder_add' %}">Додати нагадування</a>
+
+<ul>
+    {% for reminder in reminders %}
+        <li>
+            <a href="{% url 'reminder_detail' reminder.pk %}">{{ reminder.info }}</a>
+            ({{ reminder.date }})
+            <a href="{% url 'reminder_edit' reminder.pk %}">Редагувати</a>
+            <a href="{% url 'reminder_delete' reminder.pk %}">Видалити</a>
+        </li>
+    {% empty %}
+        <li>Немає нагадувань</li>
+    {% endfor %}
+</ul>
+{% endblock %}

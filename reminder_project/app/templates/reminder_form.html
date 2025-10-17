@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{% if object %}Редагувати{% else %}Додати{% endif %} нагадування</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <label>Текст нагадування:</label>
+    {{ form.info }}
+
+<label>Дата і час:</label>
+{{ form.date }}
+{% for error in form.date.errors %}
+    <div class="error">{{ error }}</div>
+{% endfor %}
+
+
+    <label>Email:</label>
+    {{ form.email }}
+
+    <button type="submit">Зберегти</button>
+</form>
+
+
+<a href="{% url 'reminder_list' %}">Назад до списку</a>
+{% endblock %}

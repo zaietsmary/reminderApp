@@ -6,8 +6,8 @@ from django.views.generic import DeleteView
 from django.urls import reverse_lazy
 from .models import Reminder
 from .forms import ReminderForm
-from django.core.exceptions import ObjectDoesNotExist
 from .tasks import send_reminder
+from django.shortcuts import render
 
 class ReminderListView(ListView):
     model = Reminder
@@ -51,3 +51,5 @@ class ReminderDeleteView(DeleteView):
     template_name = 'reminder_confirm_delete.html'
     success_url = reverse_lazy('reminder_list')
 
+def home(request):
+    return render(request, 'index.html')

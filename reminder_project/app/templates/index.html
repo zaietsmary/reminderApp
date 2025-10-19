@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main">
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ніколи не забувай про важливе</h1>
+            <p class="hero-subtitle">RemindMe - твій надійний помічник для створення та керування нагадуваннями</p>
+            <div class="hero-buttons">
+                <a href="{% url 'reminder_add' %}" class="btn btn-primary">Створити нагадування</a>
+                <a href="{% url 'reminder_list' %}" class="btn btn-secondary">Переглянути всі</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">📅</div>
+            <div class="floating-card">⏰</div>
+            <div class="floating-card">🔔</div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Чому обирають RemindMe?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Простота</h3>
+                    <p>Зручний та інтуїтивний інтерфейс для швидкого створення нагадувань</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Сповіщення</h3>
+                    <p>Своєчасні сповіщення про всі ваші важливі події та завдання</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Доступність</h3>
+                    <p>Працює на всіх пристроях - комп'ютер, планшет, смартфон</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🆓</div>
+                    <h3>Безкоштовно</h3>
+                    <p>Повністю безкоштовний сервіс без прихованих платежів</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Як це працює?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Створіть нагадування</h3>
+                    <p>Введіть текст, оберіть дату та час</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Налаштуйте сповіщення</h3>
+                    <p>Оберіть тип та частоту нагадувань</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Отримуйте сповіщення</h3>
+                    <p>Система нагадає вам в потрібний час</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

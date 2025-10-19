@@ -1,0 +1,245 @@
+body > h1:first-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+body > a[href*="index"] {
+    background: #9aefd2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+body > a[href*="index"]:hover {
+    background: #d5fff1;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+body > a[href*="add"] {
+    background: #3781ea;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+body > a[href*="add"]:hover {
+    background: #1b42c5;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+body > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body > ul > li {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+body > ul > li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+body > ul > li > a:first-child {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    text-decoration: none;
+    flex: 1;
+}
+
+body > ul > li > a:first-child:hover {
+    color: #3b82f6;
+}
+
+body > ul > li {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+body > ul > li > a:nth-child(3),
+body > ul > li > a:nth-child(4) {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-family: inherit;
+    line-height: 1.5;
+    min-width: 80px;
+    margin-left: 0.5rem;
+}
+
+body > ul > li > a:nth-child(3) {
+    background: #3b82f6;
+    color: white;
+    border: 1px solid #3b82f6;
+}
+
+body > ul > li > a:nth-child(3):hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+body > ul > li > a:nth-child(4) {
+    background: #dc2626;
+    color: white;
+    border: 1px solid #dc2626;
+}
+
+body > ul > li > a:nth-child(4):hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+body > ul > li > a[href*="edit"],
+body > ul > li > a[href*="update"] {
+    background: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-family: inherit;
+    line-height: 1.5;
+    min-width: 80px;
+    margin-left: 0.5rem;
+    border: 1px solid #3b82f6;
+}
+
+body > ul > li > a[href*="edit"]:hover,
+body > ul > li > a[href*="update"]:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+body > ul > li > a[href*="delete"] {
+    background: #dc2626;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-family: inherit;
+    line-height: 1.5;
+    min-width: 80px;
+    margin-left: 0.5rem;
+    border: 1px solid #dc2626;
+}
+
+body > ul > li > a[href*="delete"]:hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+@media (max-width: 768px) {
+    body > ul > li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    body > ul > li > a:nth-child(3),
+    body > ul > li > a:nth-child(4),
+    body > ul > li > a[href*="edit"],
+    body > ul > li > a[href*="delete"] {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    body > a[href="/"] {
+        background: #9aefd2;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    }
+
+    body > a[href="/"]:hover {
+        background: #d5fff1;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+    }
+
+    /* Кнопка Додати нагадування */
+    body > a[href="/add/"] {
+        background: #3781ea;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
+    body > a[href="/add/"]:hover {
+        background: #1b42c5;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+    }
+}

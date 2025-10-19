@@ -1,0 +1,159 @@
+body > h1:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+body > form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+body > form > label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+body > form input[type="text"],
+body > form input[type="email"],
+body > form input[type="datetime-local"],
+body > form textarea {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body > form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+body > form input[type="text"]:focus,
+body > form input[type="email"]:focus,
+body > form input[type="datetime-local"]:focus,
+body > form textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+body > form input[type="text"]:hover,
+body > form input[type="email"]:hover,
+body > form input[type="datetime-local"]:hover,
+body > form textarea:hover {
+    border-color: #9ca3af;
+}
+
+body > form button[type="submit"] {
+    background: #3b82f6;
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    margin-top: 1rem;
+    align-self: center;
+    min-width: 150px;
+}
+
+body > form button[type="submit"]:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
+
+body > form button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+body > a {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > a:hover {
+    color: #3b82f6;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+body > form input.error,
+body > form textarea.error {
+    border-color: #dc2626;
+}
+
+.success-message {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #10b981;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    body > form {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    body > h1:first-child {
+        font-size: 1.75rem;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body > form {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    body > h1:first-child {
+        font-size: 1.5rem;
+    }
+
+    body > form input[type="text"],
+    body > form input[type="email"],
+    body > form input[type="datetime-local"],
+    body > form textarea {
+        padding: 0.625rem 0.75rem;
+    }
+}
